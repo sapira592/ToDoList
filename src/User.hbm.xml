@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.todolist.model.User" table="Users">
+		<id name="id" type="int" column="id">
+			<generator class="increment"/>
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="userName"/>
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password"/>
+		</property>
+	</class>
+</hibernate-mapping>

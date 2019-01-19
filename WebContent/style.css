@@ -1,0 +1,225 @@
+@charset "windows-1255";
+*, body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+  	font-family: Arial;
+}
+
+header, nav, main, section, #managerEnter, #nav {
+	display: block;
+}
+
+main{
+	margin: 0 auto;
+}
+
+
+header{
+	margin-top: 40px;
+    font-family: 'Lobster', serif;
+    font-size: 60px;
+    height: 85px;
+    text-align: center;
+}
+
+nav{
+  height: 28px;
+}
+
+table{
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+th, td{
+	width: 22%;
+    text-align: center;
+}
+
+.button{
+	width: 100px;
+    text-align: center;
+}
+
+#tasklistWelcome{
+	width: 200px;
+    float: left;
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 20px;	
+}
+
+#logoutLink{
+	width: 200px;
+    float: right;
+    text-align: right;
+    margin-right: 45px;
+    margin-top: 20px;
+}
+
+#registerLink a, #logoutLink a{
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#message, #registerLink{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;   	
+}
+
+#message{
+  font-weight: 700;
+  color: brown;	
+}
+
+#login, #Registration, #TaskList{
+	margin-top: 50px;
+}
+
+#nav{
+	margin: 0 auto;
+	margin-left: 37%;
+}
+
+#loginForm, #ShowTasksForm, #TaskForm, #AddTaskForm{
+	text-align: center;
+	width: 30%;
+	margin: auto;
+}
+
+#ShowTasksForm, #AddTaskForm{
+	display: inline-block;
+	margin-right: 6px;
+	width: 20%;
+}
+
+#error{
+	text-align: center;	
+}
+#pass, #user, #task, #date {
+	display: block;
+	margin: auto;
+	width: 100%;
+    margin-bottom: 12px;
+}
+
+#addBtn{
+	width: 20%;
+	float: right;
+}
+
+#updateBtn, #deleteBtn{
+	width: 70%;
+	hight: 20%;
+	background-color: #a9a9a9bf;
+	margin: auto;
+	margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h5{
+  font-weight: bold;
+}
+
+input[type=file] {
+    width: 200px;
+    display: inline-block;
+    border: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+
+
+.highlighted {
+  background-color: #ffff33;
+  font-weight: bold;
+}
+
+lable{
+	font-weight: normal;
+}
+
+/****** LOGIN/REGISTER MODAL ******/
+
+.modal-dialog {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.loginmodal-container {
+  padding: 28px;
+  max-width: 320px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.loginmodal-container h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.loginmodal-container input[type=submit], input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+.loginmodal-container input[type=text], .loginmodal-container input[type=password],
+#pass, #user, #Ruser, #Rpass, #RCpass, #item, #task {
+  height: 34px;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#item{
+	width: 78%;
+	margin-right: 2%;
+	display: inline-block;
+}
+
+.loginmodal-container input[type=text]:hover, .loginmodal-container input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
